@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header button {
+    background-color: #0056b3;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1fcbff;
+}
+
+.profile-item {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.profile h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+    
+}
+
+.profile p {
+    color: #666;
+}
+
+.friends {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.friends ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.friends li {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.friends img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.friends p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .foto {
+        margin-bottom: 10px; 
+    }
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.foto {
+    overflow: hidden; 
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;}
